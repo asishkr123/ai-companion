@@ -2,7 +2,7 @@ import SearchInput from "@/components/SearchInput";
 import prismadb from "@/lib/prismadb";
 import Categories from "@/components/Categories";
 import { FunctionComponent } from "react";
-import Companion from "@/components/companions";
+import Companion from "@/components/Companions";
 
 interface RootPageProps {
   searchParams: {
