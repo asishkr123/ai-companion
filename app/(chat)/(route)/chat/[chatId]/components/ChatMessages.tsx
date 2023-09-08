@@ -20,6 +20,7 @@ const ChatMessages: FunctionComponent<ChatMessagesProps> = ({
   isLoading,
   companion,
 }) => {
+  console.log(messages, "messages");
   const scrollRef = useRef<ElementRef<"div">>(null);
   const [isLoadingSystemMessage, setIsLoadingSystemMessage] = useState(
     messages.length === 0 ? true : false
@@ -47,7 +48,7 @@ const ChatMessages: FunctionComponent<ChatMessagesProps> = ({
         return (
           <ChatMessage
             key={message.content}
-            src={message.src}
+            src={companion.src}
             content={message.content}
             role={message.role}
           />

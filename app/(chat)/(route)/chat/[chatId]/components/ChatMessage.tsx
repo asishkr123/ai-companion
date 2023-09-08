@@ -45,7 +45,7 @@ const ChatMessage: FunctionComponent<ChatMessageProps> = ({
           content
         )}
       </div>
-      {role === "user" && src && <UserAvatar src={src} />}
+      {role === "user" && src && <UserAvatar />}
       {role !== "user" && !isLoading && (
         <Button
           onClick={onCopy}
